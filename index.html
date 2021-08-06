@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="modal-login" id="modal">
+            <i class="fa fa-times" id="modal-close"></i>
+            <form action="login">
+                <p class="login-title">Login</p>
+                <input type="text" placeholder="enter your email">
+                <input type="password" placeholder="enter your password">
+                <button class="bookNow-btn">Login Now</button>
+                <br>
+                <div style="margin-bottom: 5px;">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="question-block">
+                    <span>Forget password ?</span>
+                    <a href="#">Click me</a>
+                </div>
+                <div class="question-block">
+                    <span>Don't have an account ?</span>
+                    <a href="#">register now</a>
+                </div>
+            </form>
+        </div>
+        <div class="full-screen">
+            <header>
+                <div class="container">
+                    <a href="#" class="logo"><span>T</span>ravel</a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#book">Book</a> </li>
+                            <li><a href="#packages">Packages</a> </li>
+                            <li><a href="#services">Services</a> </li>
+                            <li><a href="#gallery">Gallery</a> </li>
+                            <li><a href="#review">Review</a> </li>
+                            <li><a href="#contact">Contact</a> </li>
+                        </ul>
+                    </nav>
+                    <div class="nav-icons">
+                        <i class="fa fa-search" id="search"></i>
+                        <i class="fa fa-user-alt" id="modal-open"></i>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="search here...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </header>
+            <div class="top">
+                <div class="screen-content">
+                    <h1 class="title">ADVENTURE IS WORTHWHILE</h1>
+                    <p class="subtitle">Dicover New Places With Us, Adventure Awaits</p>
+                    <button class="discover-more">Discover more</button>
+
+                    <div class="change-video">
+                        <div class="new-video video1 active" data-video="1"></div>
+                        <div class="new-video video2" data-video="2"></div>
+                        <div class="new-video video3" data-video="3"></div>
+                        <div class="new-video video4" data-video="4"></div>
+                        <div class="new-video video5" data-video="5"></div>
+                    </div>
+                </div>
+                <video class="top_video" loop autoplay muted src="./images/vid-1.mp4"></video>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <section id="book">
+                    <div class="title">
+                        <span>B</span>
+                        <span>o</span>
+                        <span>o</span>
+                        <span>k</span>
+                        <span style="margin-left: 25px">n</span>
+                        <span>o</span>
+                        <span>w</span>
+                    </div>
+                    <div class="travel">
+                        <div class="travel-img">
+                            <img src="./images/book-img.svg" alt="">
+                        </div>
+                        <div class="travel-form">
+                            <form action="bookNow">
+                                <label for="placeName">Where To</label>
+                                <input type="text" placeholder="place name">
+                                <label for="guestsNumber">How many</label>
+                                <input type="number" placeholder="number of guests">
+                                <label for="dateStart">Arrivals</label>
+                                <input type="date">
+                                <label for="dateEnd">Leaving</label>
+                                <input type="date">
+                                <button class="bookNow-btn">Book now</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="packages">
+                    <div class="title">
+                        <span>P</span>
+                        <span>a</span>
+                        <span>c</span>
+                        <span>k</span>
+                        <span>a</span>
+                        <span>g</span>
+                        <span>e</span>
+                        <span>s</span>
+                    </div>
+
+                    <div class="places">
+                        <!--  JS - Generator  -->
+                    </div>
+                </section>
+
+                <section id="services">
+                    <div class="title">
+                        <span>S</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>v</span>
+                        <span>i</span>
+                        <span>c</span>
+                        <span>e</span>
+                        <span>s</span>
+                    </div>
+
+                    <div class="services">
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <h2 class="service-title">Affordable Hotels</h2>
+                            <p class="service-text">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+                                Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h2 class="service-title">Food And Drinks</h2>
+                            <p class="service-text">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+                                Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h2 class="service-title">Safty Guide</h2>
+                            <p class="service-text">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+                                Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <h2 class="service-title">Around The World</h2>
+                            <p class="service-text">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+                                Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <h2 class="service-title">Fastest Travel</h2>
+                            <p class="service-text">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+                                Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                            <h2 class="service-title">Adventures</h2>
+                            <p class="service-text">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Inventore
+                                Commodi Earum, Quis Voluptate Exercitationem Ut Minima Itaque Iusto Ipsum Corrupti!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="gallery">
+                    <div class="title">
+                        <span>G</span>
+                        <span>a</span>
+                        <span>l</span>
+                        <span>l</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>y</span>
+                    </div>
+
+                    <div class="gallery">
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-1.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-2.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-3.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-4.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-5.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-6.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-7.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-8.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img class="photo" src="./images/g-9.jpg" alt="">
+                            <div class="more-info">
+                                <p class="name">Amazing places</p>
+                                <p class="description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus,
+                                    Tenetur.</p>
+                                <button class="bookNow-btn">See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="review">
+                    <div class="title">
+                        <span>R</span>
+                        <span>e</span>
+                        <span>v</span>
+                        <span>i</span>
+                        <span>e</span>
+                        <span>w</span>
+                    </div>
+                    <div class="review-show">
+
+                        <div class="review">
+                            <div class="person">
+                                <img src="./images/pic1.png" alt="">
+                                <p class="name">John Doe</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                    dolorum fuga hic in, inventore iste tenetur. Eius expedita, impedit iste itaque, nam
+                                    numquam officiis, quasi qui quisquam soluta vel veniam voluptates! Ab alias, aliquam
+                                    expedita obcaecati quam quisquam repellendus sit.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <img src="./images/pic2.png" alt="">
+                                <p class="name">John Doe</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                    dolorum fuga hic in, inventore iste tenetur. Eius expedita, impedit iste itaque, nam
+                                    numquam officiis, quasi qui quisquam soluta vel veniam voluptates! Ab alias, aliquam
+                                    expedita obcaecati quam quisquam repellendus sit.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <img src="./images/pic3.png" alt="">
+                                <p class="name">John Doe</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                    dolorum fuga hic in, inventore iste tenetur. Eius expedita, impedit iste itaque, nam
+                                    numquam officiis, quasi qui quisquam soluta vel veniam voluptates! Ab alias, aliquam
+                                    expedita obcaecati quam quisquam repellendus sit.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="person">
+                                <img src="./images/pic4.png" alt="">
+                                <p class="name">John Doe</p>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                                    dolorum fuga hic in, inventore iste tenetur. Eius expedita, impedit iste itaque, nam
+                                    numquam officiis, quasi qui quisquam soluta vel veniam voluptates! Ab alias, aliquam
+                                    expedita obcaecati quam quisquam repellendus sit.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="contact">
+                    <div class="title">
+                        <span>C</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>a</span>
+                        <span>c</span>
+                        <span>t</span>
+                    </div>
+
+                    <div class="contact">
+                        <img class="contact-img" src="./images/contact-img.svg" alt="">
+                        <div class="contact-form">
+                            <form action="contact">
+                                <div>
+                                    <input type="text" placeholder="name">
+                                    <input type="text" placeholder="email">
+                                </div>
+                                <div>
+                                    <input type="number" placeholder="number">
+                                    <input type="text" placeholder="subject">
+                                </div>
+                                <textarea name="message" placeholder="message" id="" cols="35" rows="10"></textarea>
+                                <button class="bookNow-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="partners">
+                        <div class="partners-show">
+                            <img src="./images/1.jpg" class="partner-img" alt="">
+                            <img src="./images/2.jpg" class="partner-img" alt="">
+                            <img src="./images/3.jpg" class="partner-img" alt="">
+                            <img src="./images/4.jpg" class="partner-img" alt="">
+                            <img src="./images/5.jpg" class="partner-img" alt="">
+                            <img src="./images/6.jpg" class="partner-img" alt="">
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-links">
+
+                    <div class="footer-part">
+                        <p class="footer-title">About us</p>
+                        <p class="footer-text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Assumenda Quas
+                            Magni Pariatur Est
+                            Accusantium Voluptas Enim Nemo Facilis Sit Debitis.</p>
+                    </div>
+                    <div class="footer-part">
+                        <p class="footer-title">Branch Locations</p>
+                        <ul class="footer-list">
+                            <li><a href="#">India</a> </li>
+                            <li><a href="#">USA</a> </li>
+                            <li><a href="#">Japan</a> </li>
+                            <li><a href="#">France</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-part">
+                        <p class="footer-title">Quick Links</p>
+                        <ul class="footer-list">
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#book">Book</a> </li>
+                            <li><a href="#packages">packages</a> </li>
+                            <li><a href="#services">services</a> </li>
+                            <li><a href="#gallery">gallery</a> </li>
+                            <li><a href="#review">review</a> </li>
+                            <li><a href="#contact">contact</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-part">
+                        <p class="footer-title">Follow Us</p>
+                        <ul class="footer-list">
+                            <li><a href="#">Facebook</a> </li>
+                            <li><a href="#">instagram</a> </li>
+                            <li><a href="#">twitter</a> </li>
+                            <li><a href="#">linkedin</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="all-rights">
+                    <p>Created By <span>Vazgen Manaseryan</span> | All Rights Reserved!</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
